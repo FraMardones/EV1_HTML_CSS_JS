@@ -24,7 +24,6 @@ if (contenedorProductos) {
     card.innerHTML = `
       <img src="${prod.imagen}" alt="${prod.nombre}" class="img-fluid mb-2">
       <h6>${prod.nombre}</h6>
-      <p class="descripcion">${prod.descripcion || "Sin descripción disponible"}</p>
       <p class="precio">$${prod.precio.toLocaleString('es-CL')} CLP</p>
       <a href="detalle.html?id=${prod.id}" class="btn btn-primary mt-2">Ver detalle</a>
       <button class="btn btn-success mt-2 agregar-carrito">Añadir al carrito</button>

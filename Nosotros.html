@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nosotros | Level-UP Gamer</title>
+  <title>Nosotros | Level-UP</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/nosotros.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
 </head>
 <body>
-  <!-- HEADER -->
   <header>
     <nav>
       <div class="logo">
@@ -23,61 +25,83 @@
       <ul id="menu">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="productos.html">Productos</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="nosotros.html" class="active">Nosotros</a></li>
         <li><a href="blogs.html">Blogs</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
       <div class="icons">
         <a href="carrito.html"><span class="material-icons">shopping_cart</span></a>
-        <a href="#"><span class="material-icons">person</span></a>
+        <a href="login.html"><span class="material-icons">person</span></a>
       </div>
     </nav>
-    <script>
-      const toggle = document.getElementById("menu-toggle");
-      const menu = document.getElementById("menu");
-      toggle.addEventListener("click", () => {
-        menu.classList.toggle("show");
-      });
-    </script>
   </header>
 
- <main class="container py-5">
-  <h1 class="text-center mb-5">Sobre Level-UP Gamer</h1>
+  <main class="nosotros-container">
+    <section class="nosotros-title">
+      <h1 class="display-4 fw-bold">Sobre Nosotros</h1>
+      <p class="lead">Conoce más sobre nuestra historia, misión y visión</p>
+    </section>
 
-  <div class="nosotros-triangulo">
-    <!-- Misión (arriba) -->
-    <div class="card-neon mision text-center p-4">
-      <span class="material-icons md-48 mb-3">flag</span>
-      <h3>Misión</h3>
+    <section class="card-neon">
+      <h2>Historia</h2>
       <p>
-        Brindar productos de alta calidad para gamers en todo Chile, con experiencia de compra única y enfoque en la satisfacción del cliente y comunidad.
+        Level-Up Gamer nació hace dos años como respuesta a la creciente demanda durante la pandemia.
+        Desde entonces, nos hemos dedicado a entregar productos gamer de calidad en todo Chile, sin contar
+        con una tienda física pero con despachos rápidos y seguros a todo el país.
       </p>
-    </div>
-
-    <!-- Historia (abajo izquierda) -->
-    <div class="card-neon historia text-center p-4">
-      <span class="material-icons md-48 mb-3">history</span>
-      <h3>Historia</h3>
       <p>
-        Nacimos hace dos años para cubrir la creciente demanda de productos gamers durante la pandemia, ofreciendo consolas, accesorios, computadores y sillas especializadas.
+        Comenzamos como un pequeño emprendimiento entre amigos apasionados por los videojuegos, 
+        y hoy somos referentes en el mercado nacional de productos gaming, con miles de clientes satisfechos.
       </p>
-    </div>
-
-    <!-- Visión (abajo derecha) -->
-    <div class="card-neon vision text-center p-4">
-      <span class="material-icons md-48 mb-3">visibility</span>
-      <h3>Visión</h3>
       <p>
-        Ser la tienda online líder en Chile, reconocida por innovación, servicio excepcional y un programa de fidelización que premie a nuestros clientes más fieles.
+        Nuestro crecimiento ha sido orgánico, siempre enfocados en la calidad de productos y 
+        en la experiencia de usuario, priorizando la confianza y satisfacción de nuestros clientes.
       </p>
-    </div>
-  </div>
-</main>
+    </section>
 
+    <section class="card-neon">
+      <h2>Misión</h2>
+      <p>
+        Proporcionar productos de alta calidad para gamers en todo Chile, ofreciendo una experiencia de
+        compra única y personalizada, siempre con un enfoque en la satisfacción del cliente y la
+        construcción de comunidad.
+      </p>
+      <p>
+        Buscamos constantemente innovar en nuestro catálogo, incorporando las últimas tendencias
+        y tecnologías para que nuestros clientes siempre tengan acceso a lo mejor del mercado.
+      </p>
+      <p>
+        Valoramos la transparencia, la honestidad y el compromiso con nuestros clientes, 
+        estableciendo relaciones a largo plazo basadas en la confianza mutua.
+      </p>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="text-center py-4" style="background-color:#0a0a0a; border-top:2px solid #39FF14; color:#ccc;">
-    © 2025 Level-UP Gamer - Todos los derechos reservados
+    <section class="card-neon">
+      <h2>Visión</h2>
+      <p>
+        Ser la tienda online líder en productos para gamers en Chile, reconocida por la innovación, un
+        servicio excepcional y un programa de fidelización que premie a nuestros clientes más fieles.
+      </p>
+      <p>
+        Expandirnos a otros países de Latinoamérica, manteniendo siempre nuestros estándares de calidad
+        y servicio que nos han caracterizado desde el principio.
+      </p>
+      <p>
+        Crear la comunidad gamer más grande de Chile, organizando eventos, torneos y actividades
+        que fomenten la pasión por los videojuegos y el sentido de pertenencia.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Level-UP Gamer - Todos los derechos reservados</p>
   </footer>
+
+  <script>
+    // Toggle menu móvil
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      document.getElementById('menu').classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
